@@ -1,0 +1,10 @@
+# AGENTS.md
+
+## Session Directive
+
+1. Create a session name in the format `YYYY-MM-DD_some_name` from the issue title and make sure the name does not already exist in the `sessions/` directory.
+2. Create new session directory `sessions/<session_name>` from the template directory in `template/session`.
+3. Fill out the `PLAN.md` file based on the **User Request** of the issue description.
+4. Implement the code according to `PLAN.md`. Only adapt or add files in `sessions/<session_name>/code`. It is allowed to create modules in code and import them in the entrypoint. It is also allowed to change `sessions/<session_name>/run.sh` if the script requires a different or multiple commands to start, such as a `streamlit` application. If possible, use the script feature of `uv`, where the dependencies are defined at the top of the entrypoint. If `uv` is not installed, install it via `pip`. Tests can also be added to `sessions/<session_name>/code` if it helps the development or to check acceptance criteria. The folders `resources` and `templates` are strictly read-only and sub-folder should only be used if specified explicitly under **Resources** in the issue description.
+The `sessions/<session_name>/data` directory is not tracked by `git` and can be used for intermediate and result artifacts that are produced by running the entrypoint.
+5. Summarize the feasibility study in the `sessions/<session_name>/REPORT.md` file. Try to adhere to the structure, but feel free to add mermaid diagrams, screenshots, or plots. Use PR attachements to get links to uploaded files. The `Session Summary` should give a concise status report about the implementation progress, blockers, or limitations. The `Results` should contain any information that answers the **User Request** of the issue description which can be a short statement about feasibility, metrics, screenshots, or a plot. `Next Steps` can propose related follow-up topics or improvements. Do not add any other documenation files or changelogs.
