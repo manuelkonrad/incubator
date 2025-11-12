@@ -14,19 +14,29 @@
 ## Functional Requirements
 
 ### FR-001: Title
+
 **Priority:** High
+
 **Description:**
+
 **Acceptance Criteria:**
+
 **Dependencies:**
+
 **Notes:**
 
 ## Non-Functional Requirements
 
 ### NFR-001: Title
+
 **Priority:** High
+
 **Description:**
+
 **Acceptance Criteria:**
+
 **Dependencies:**
+
 **Notes:**
 
 ## Tech Stack
